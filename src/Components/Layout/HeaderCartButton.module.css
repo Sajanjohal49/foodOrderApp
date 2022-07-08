@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Merienda&family=Merriweather&family=Montserrat:wght@100;400;900&family=Sacramento&family=Titillium+Web:wght@300&display=swap");
+.button {
+  cursor: pointer;
+  font: inherit;
+  border: none;
+  background-color: rgb(61, 50, 50);
+  color: white;
+  padding: 0.55rem 0.785rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid rgb(238, 236, 236);
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.button:hover,
+.button:active {
+  background-color: #fffefd;
+  border: 1.6px solid rgb(12, 12, 12);
+}
+
+.icon {
+  width: 1.55rem;
+  height: 1.55rem;
+  margin-right: 0.8rem;
+}
+
+.text {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 1.3rem;
+  font-weight: lighter;
+}
+@media screen and (max-width: 992px) {
+  .text {
+    font-size: 0.023px;
+    margin-left: -22px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .icon {
+    width: 1.3rem;
+    height: 1.3rem;
+    margin-right: 0.8rem;
+  }
+  .button {
+    padding: 0.4rem 1rem;
+    margin-top:-3px ;
+  }
+  .badge{
+    font-size: 12px;
+  }
+  
+}
+
+.button:hover .text,
+.button:active .text {
+  color: rgb(50, 126, 50);
+}
+
+.badge {
+  background-color: #faf7f5;
+  color: rgb(50, 126, 50);
+  padding: 0.25rem 1rem;
+  border-radius: 25px;
+  margin-left: 1rem;
+  font-weight: bold;
+}
+
+.button:hover .badge,
+.button:active .badge {
+  background-color: black;
+  color: white;
+}
+
+.bump {
+  animation: bump 300ms ease-out;
+}
+
+@keyframes bump {
+  0% {
+    transform: scale(1);
+  }
+  10% {
+    transform: scale(0.9);
+  }
+  30% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1.25);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

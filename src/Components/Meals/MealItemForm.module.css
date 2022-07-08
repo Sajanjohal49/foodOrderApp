@@ -1,0 +1,22 @@
+.form {
+    text-align: right;
+  }
+  
+  .form button {
+    font-family: 'Titillium Web', sans-serif;
+    cursor: pointer;
+    background-color:transparent;
+    border: 1px solid black;
+    color: rgb(26, 24, 24);
+    padding: 0.20rem 1.5rem;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  
+  .form button:hover,
+  .form button:active {
+    background-color: #641e03;
+    border-color: #641e03;
+    color:rgb(244, 248, 251)
+  }
